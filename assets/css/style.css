@@ -1,0 +1,190 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+@import url(https://fonts.googleapis.com/css?family=Covered+By+Your+Grace:regular);
+:root {
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Oswald", sans-serif;
+  --font-temporary: "Covered By Your Grace", cursive;
+  --color-white: #ffffff;
+  --color-dark-red: #821e05;
+  --color-dark-gray: #2d2d2d;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
+body {
+  font-family: var(--font-primary);
+}
+a{
+    text-decoration: none;
+}
+.vh{
+    height: 100vh;
+}
+/* <!-- 1 banner section  --> */
+.banner_top,
+marquee {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-white);
+  font-size: small;
+  font-weight: 600;
+}
+.banner_top_card_logo {
+  font-size: medium;
+}
+.banner_top_card {
+  padding: 20px;
+}
+.banner_top_card,
+.banner_top_card_logo {
+  padding-inline: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_top_card:nth-of-type(3) {
+  width: 25%;
+  margin: auto;
+}
+.banner_top_card_title {
+  background-color: var(--color-dark-red);
+  padding: 5px;
+}
+.banner {
+  width: 100%;
+  height: auto;
+  background-image: url("../img/banner/banner_bg.jpg");
+  background-position: top;
+  background-size:105%;
+}
+/* navbar menu  */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 20px;
+}
+.navbar_logo {
+  width: 150px;
+  height: 65px;
+}
+.navbar_logo img {
+  padding-block-start: 20px;
+  width: 100%;
+  height: 60px;
+  display: block;
+}
+.navbar_menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar_menu .navbar_menu_link a,.navbar_btn a{
+  color: var(--color-white);
+  font-weight: bold;
+  font-family: var(--font-secondary);
+  padding:15px 25px;
+  opacity: 1;
+  transition: 0.4s opacity ease;
+  -webkit-transition: 0.4s opacity ease;
+  -moz-transition: 0.4s opacity ease;
+  -ms-transition: 0.4s opacity ease;
+  -o-transition: 0.4s opacity ease;
+}
+.navbar_menu .navbar_menu_link a:hover,.navbar_btn a:hover{
+  opacity: 0.7;
+}
+.navbar_sub-menu{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: var(--color-white);
+    width: 200px;
+    top: 160%;
+}
+.navbar_sub-menu_link{
+    color: var(--color-dark-gray) !important;
+}
+.navbar_menu_link:hover .navbar_sub-menu,.navbar_sub-menu:hover{
+    display: flex;
+
+}
+.navbar_btn_link{
+  position: relative;
+  display: inline-block;
+  border: 1px var(--color-white) solid;
+  transform: scale(1);
+  transition: all 1s linear;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-transition: all 1s linear;
+  -moz-transition: all 1s linear;
+  -ms-transition: all 1s linear;
+  -o-transition: all 1s linear;
+}
+.navbar_btn_link:hover{
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+}
+.banner_title,.banner_heading{
+    text-align: center;
+    letter-spacing: 5px;
+    color: var(--color-white);
+}
+.banner_title{
+    font-size: 14px;
+    font-weight: 400;
+}
+.banner_heading{
+    font-family: var(--font-secondary);
+    font-size: 120px;
+    line-height: 130px;
+    letter-spacing: 15px;
+}
+.banner_img{
+    display: block;
+    margin-block: -35px;
+    margin-inline: auto;
+}
+.banner_text{
+    color: var(--color-white);
+    max-width: 450px;
+    text-align: center;
+    margin: auto;
+    font-size: 14px;
+    font-weight: 500;
+}
+.banner_btn{
+    display: block;
+    text-align: center;
+    margin:0 auto;
+    padding-block-start: 60px;
+    padding-block-end: 70px;
+}
+.banner_btn_link{
+    padding: 12px 18px;
+    font-family: var(--font-secondary);
+    font-size: 13px;
+    letter-spacing: 4px;
+    font-weight: 600;
+    color: var(--color-dark-gray);
+    background-color: var(--color-white);
+}
+@media(max-width:1100px){
+    .navbar_menu{
+     flex-direction: column;
+    }
+}
