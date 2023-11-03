@@ -298,10 +298,10 @@ a.navbar_sub-sub-menu_link {
     background-color: var(--color-dark-gray);
     position: absolute;
     display: inline-block;
-    top: 0;
-    right: 0;
+    top: 5px;
+    right: 5px;
     padding-block-start: 40px;
-    width: 250px;
+    width: 300px;
     height: 600px;
     overflow-y: scroll;
   }
