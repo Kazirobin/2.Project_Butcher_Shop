@@ -857,6 +857,9 @@ button.card_btn{
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+.price_card.active img{
+  visibility: hidden;
+}
 @media (max-width:1000px){
   .price_cards{
     flex-direction: column;
