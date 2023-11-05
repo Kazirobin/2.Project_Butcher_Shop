@@ -821,6 +821,7 @@ h2.price_heading{
   align-items: center;
   margin: auto;
   width: 1230px;
+  padding-block: 30px;
 }
 .price_card{
   width: 400px;
@@ -849,5 +850,21 @@ button.card_btn{
 /* active card css  */
 .price_card.active{
   background-image: url('../img/prices/prices_img2.jpg');
+  background-size: cover;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+@media (max-width:1000px){
+  .price_cards{
+    flex-direction: column;
+    width: 100%;
+  }
+  .price{
+    height: auto;
+    background-position: bottom center;
+  }
 }
 /* 5 prices section end */
