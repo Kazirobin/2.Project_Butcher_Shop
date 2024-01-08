@@ -826,6 +826,7 @@ h2.price_heading{
 .price_card{
   width: 400px;
   padding-block: 70px;
+  background-image: url(../img/);
   background-color: var(--color-white);
 }
 h2.card_title{
@@ -846,6 +847,7 @@ img.card_img{
 }
 button.card_btn{
   padding-block: 15px;
+  cursor: pointer;
 }
 /* active card css  */
 .price_card.active{
@@ -857,6 +859,8 @@ button.card_btn{
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
 }
+.price_card.active h2{
+  color: #ffffff;}
 .price_card.active img{
   visibility: hidden;
 }
