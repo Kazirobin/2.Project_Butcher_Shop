@@ -891,5 +891,41 @@ button.card_btn{
   background-image:url('../img/menu/menu_img.jpg');
   background-size: cover;
 }
+.menu__left__title,
+.menu__right__item__price__title{
+  color: var(--color-white);
+  font-size: 60px;
+  font-weight: 800;
+}
+.menu__right__items__list__title{
+  font-size: 22px;
+  font-weight: 700;
+}
+.menu__right__item__text__title,
+.menu__right__item__price__title{
+  font-size: 18px;
+  font-weight: 700;
+}
+.menu__right__item__text__details,
+.menu__right__item__price__text
+{
+  font-size: 16px;
+  color: var(--color-dark-gray);
+}
+.menu__right__item__price__title{
+  background-color: var(--color-dark-red);
+  display: inline;
+  padding: 4px 8px;
+}
+.menu__right__heading{
+display: flex;
+  max-width: 600px;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.menu__right__heading p{
+  display: inline-block;
+  align-self: flex-start;
+}
 
 /* 6 menu section  end*/
