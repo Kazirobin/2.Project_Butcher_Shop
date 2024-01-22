@@ -28,8 +28,7 @@ a {
   text-decoration: none;
 }
 h3,
-h2,
-p {
+h2 {
   margin: 0 auto;
 }
 button {
@@ -918,14 +917,12 @@ button.card_btn{
   padding: 4px 8px;
 }
 .menu__right__heading{
-display: flex;
-  max-width: 600px;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  width: 600px;
+  display: flex;
+  justify-content: space-between;
 }
 .menu__right__heading p{
-  display: inline-block;
-  align-self: flex-start;
+  padding-inline: 1rem;
 }
 
 /* 6 menu section  end*/
